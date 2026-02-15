@@ -22,7 +22,7 @@ torch.manual_seed(SEED)
 if torch.cuda.is_available():
     torch.cuda.manual_seed_all(SEED)
 
-EPOCHS = 30
+EPOCHS = 10
 BATCH_SIZE = 8
 EXPLICIT_THRESHOLD = 0.5600
 
@@ -164,3 +164,4 @@ sub = pd.DataFrame({
 
 sub.to_csv(OUTPUT_FILENAME, index=False)
 print(f"Process complete. Results saved to {OUTPUT_FILENAME}.")
+
